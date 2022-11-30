@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css "href="app.css">
+    <title>QUIZ APP</title>
+    <script type="text/javascript " src="question.js"></script>
+
+</head>
+<body>
+    <div id="header">
+
+        <h1><span id="quizLength"></span> TIME<br> The Quiz App</h1>
+        <span id="menu"></span>
+        <div id="menubox" style="display: none;">
+            <br><a href="add_questions.html" alt="add questions" title="addquestions"> Añadir Preguntas </a><br><br>
+            <a href="removequestions.html" alt="remove questions" title="removequestions"> Eliminar Preguntas </a>
+            <span id="menudismiss"> X </span>
+        </div>
+    </div>
+    <div class="quiz-wrapper">
+     
+        <div id="quiz"></div>
+    </div>
+    <button id="previous"><p>PREVIOUS QUESTION</p></button>
+    <button id="next"><p>NEXT QUESTION</p></button>
+    <button id="submit"><p>SUBMIT QUIZ</p></button>
+    <button id="tryAgain"><p>Volver a intentar</p></button>
+    <div class="slide">
+        
+    </div>
+
+
+    <div id="results"></div>
+    <h2> Contandor </h2>
+    <div id="clockdiv">
+        <div>
+            <div class="smalltext">Minutes</div>
+            <span class="minutes"></span>
+        </div>
+        <div>
+            <div class="smalltext">Seconds</div>
+            <span class="seconds"></span>
+        </div>
+    </div>
+
+
+    <div id="footer"><h5>Written by Adrian Marcos Betanzos & Copyrigth November 2022</h5>
+    </div>
+    <script src="app.js"></script>
+    <script src="countdown.js"></script>
+    <script src='menu.js'></script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Quiz Bank Editor</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='app.css'>
+    <script type="text/javascript" src="question.js"></script>
+</head>
+
+<body>
+    <div id="header">
+    <h1>Banco de preguntas <br>Eliminar Preguntas</h1>
+        <span id="menu"></span>
+        <div id="menubox" style="display: none;">
+        <br><a href="quiz_app.html" alt="back to quiz" title="back to quiz"> Volver al cuestionario </a><br><br>
+        <a href="add_question.html" alt="add questions" title="add questions"> Añadir Preguntas </a>
+    <span id="menudismiss"> X </span>
+</div>
+    </div>
+<div class="wrapper">
+    <form id="removeQuestion" onsubmit="submitRemoveForm(event)">
+        <label class="formLabel">Banco de preguntas:</label><br>
+        <!-- Add all questions here with check boxes -->
+            <div id="showQstn"></div>
+            <br><br>
+            <button id="removeQuestions"><p>Eliminar preguntas</p></button>
+            <br><br><br>
+            <button id="saveQuestions"><p>Guardar preguntas</p></button>
+    </form>
+        </div>
+        <div id="footer2">
+            <h5>Escrito por Adrian Marcos 2022</h5>
+        </div>
+            <script src='removequestions.js'></script>
+            <script src='menu.js'></script>
+</body>
+</html>
